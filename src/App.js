@@ -1,24 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState, useTransition } from "react";
+import "./App.css";
+import Footer from "./components/Footer";
+import Info from "./components/Info";
+import Profile from "./components/Profile";
+import { Projects } from "./components/Projects";
+import Skills from "./components/Skills";
+import { Context } from "./contexts/Context";
+import i18n from "./i18n";
+import { useTranslation } from "react-i18next";
 
 function App() {
+  const [theme, setTheme] = useState(null);
+
+  const handleChangeLang = async (lang) => {
+    await i18n.changeLanguage(lang);
+    console.log(i18n);
+  };
+  const { t, i18n } = useTranslation();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Context.Provider
+      value={{
+        theme,
+        setTheme,
+        handleChangeLang,
+        t,
+        i18n,
+      }}
+    >
+      <div className="App w-max-screen h-[3094px] bg-white dark:bg-[#484148] ">
+        <div className="mx-auto ">
+          <Info />
+          <Skills />
+          <Profile />
+          <Projects />
+          <Footer />
+        </div>
+      </div>
+    </Context.Provider>
   );
 }
 
