@@ -1,7 +1,6 @@
 import laptop from "../projects/laptop.png";
 import arrowRight from "../projects/arrow-right.svg";
 import arrowRightDark from "../projects/arrow-right-dark.svg";
-import s11g2 from "../projects/s11g2.png";
 import { Context } from "../contexts/Context";
 import { useContext } from "react"; 
 
@@ -16,8 +15,8 @@ export default function Project(props) {
       id="Project-card "
       className={
         index % 2 === 0
-          ? `box-border max-w-[500px] max-h-[668px] flex flex-col p-10 bg-[#DDEEFE] rounded-[12px] dark:bg-[#2D3235] text-[#000000] dark:text-[#FFFFFF]`
-          : `box-border max-w-[500px] max-h-[668px] flex flex-col p-10 bg-[#D9F6F1] rounded-[12px] dark:bg-[#495351] text-[#000000] dark:text-[#FFFFFF]`
+          ? `box-border max-w-[500px] max-h-[668px] flex flex-col p-10 bg-[#ffd29c82] rounded-[12px] dark:bg-[#2D3235] text-[#000000] dark:text-[#FFFFFF]`
+          : `box-border max-w-[500px] max-h-[668px] flex flex-col p-10 bg-[#F4F2ED] rounded-[12px] dark:bg-[#495351] text-[#000000] dark:text-[#FFFFFF]`
       }
     >
       <h3 id="projects-title" className="mb-4">
