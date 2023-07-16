@@ -5,17 +5,17 @@ export function Projects() {
   const { t } = useContext(Context);
   const projectsData = [
     {
-      titleEn: "Shopping Card",
-      titleTr: "Alışveriş Sepeti",
+      titleEn: "Furkan's Pizza House",
+      titleTr: "Furkan'ın Pizza Evi",
       bodyEn:
-        "This project aims to enhance the shopping experience for users by providing them with a shopping cart feature on an e-commerce platform.",
+        "This project is a platform that provides users with a homepage and an order form, enabling them to place orders easily and quickly.",
       bodyTr:
-        "Bu proje, bir e-ticaret platformunda kullanıcılara alışveriş sepeti özelliği sunarak, alışveriş deneyimini geliştirmeyi amaçlamaktadır.",
-      skillsUsed: ["react", "axios", "tailwind", "router", "date-fns"],
-      gitHubLink: "https://github.com/frkn8/fsweb-s11g1-shopping-cart",
-      vercelLink: "https://fsweb-s11g1-shopping-cart-one-fawn.vercel.app/",
+        "Bu proje, kullanıcılara bir anasayfa ve sipariş formu sunarak kolay ve hızlı bir şekilde sipariş verme imkanı sağlayan bir platformdur.",
+      skillsUsed: ["react", "axios", "yup", "router", "cypress"],
+      gitHubLink: "https://github.com/frkn8/fsweb-s7-challenge-pizza",
+      vercelLink: "https://furkanpizza.vercel.app/",
       projectImageURL:
-        "https://i.ibb.co/BZT72W0/shopping.png",
+        "https://i.ibb.co/Phw2YZT/pizza.png",
       lightBG: "#DDEEFE",
       darkBG: "#2D3235",
     },
