@@ -15,8 +15,8 @@ export default function Project(props) {
       id="Project-card "
       className={
         index % 2 === 0
-          ? `box-border max-w-[500px] max-h-[668px] flex flex-col p-10 bg-[#ffd29c82] rounded-[12px] dark:bg-[#2D3235] text-[#000000] dark:text-[#FFFFFF]`
-          : `box-border max-w-[500px] max-h-[668px] flex flex-col p-10 bg-[#F4F2ED] rounded-[12px] dark:bg-[#495351] text-[#000000] dark:text-[#FFFFFF]`
+          ? `box-border max-w-[500px] max-h-[668px] flex flex-col p-10 bg-[#ffd29c82] rounded-[12px] dark:bg-[#63523c82] text-[#000000] dark:text-[#FFFFFF]`
+          : `box-border max-w-[500px] max-h-[668px] flex flex-col p-10 bg-[#F4F2ED] rounded-[12px] dark:bg-[#5e5c5b] text-[#000000] dark:text-[#FFFFFF]`
       }
     >
       <h3 id="projects-title" className="mb-4">
