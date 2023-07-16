@@ -4,7 +4,7 @@ import { Context } from "../contexts/Context";
 export default function Footer() {
   const { theme, setTheme, t, i18n, handleChangeLang } = useContext(Context);
   return (
-    <section className="dark:bg-[#484148]">
+    <section className="bg-[#eeeeee7d] dark:bg-[#2b272b]">
       <footer className="w-7/12 flex mx-auto max-w-[1440px] ">
         <div className="flex flex-row gap-14 ml-7 mt-[12.6%] mb-[16.0%] justify-center items-center">
           <span className="flex w-6/12 relative">
