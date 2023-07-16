@@ -17,9 +17,28 @@
       rel="stylesheet"
     />
     <title>Furkan Ozkan</title>
+
+    <script>
+      // Tarayıcının tercih ettiği renk şemasına göre dark modu kontrol et
+      function applyDarkMode() {
+  var isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+  document.documentElement.classList.toggle('dark', !isDarkMode);
+}
+
+      // Sayfa yüklendiğinde dark modu uygula
+      applyDarkMode();
+
+      // Kullanıcının tercih ettiği renk şeması değiştiğinde dark modu yeniden uygula
+      window.matchMedia('(prefers-color-scheme: dark)').addListener(function(e) {
+          applyDarkMode();
+      });
+  </script>
   </head>
-  <body className="dark">
+  <body class="bg-white dark:bg-black">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>
 </html>
+
+
+

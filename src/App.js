@@ -10,7 +10,7 @@ import i18n from "./i18n";
 import { useTranslation } from "react-i18next";
 
 function App() {
-  const [theme, setTheme] = useState(null);
+  const [theme, setTheme] = useState("light");
 
   const handleChangeLang = async (lang) => {
     await i18n.changeLanguage(lang);

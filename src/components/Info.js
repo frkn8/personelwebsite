@@ -12,18 +12,22 @@ export default function () {
   const { theme, setTheme, t, i18n, handleChangeLang } = useContext(Context);
 
   useEffect(() => {
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      setTheme("dark");
-    } else {
+    if (localStorage.getItem("theme")) {
+      setTheme(localStorage.getItem("theme"));
+    } else if (window.matchMedia("(prefers-color-scheme: light)").matches) {
       setTheme("light");
+    } else {
+      setTheme("dark");
     }
   }, []);
 
   useEffect(() => {
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
     } else {
       document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
     }
   }, [theme]);
 
@@ -31,9 +35,8 @@ export default function () {
     setTheme(theme === "dark" ? "light" : "dark");
   };
 
-  console.log(theme);
   return (
-    <section className="bg-[#F4F4F4]  dark:bg-[#2A262B] ">
+    <section className="bg-[#F4F4F4] dark:bg-[#2A262B]">
       <header className="App-header flex flex-col w-7/12 mx-auto max-w-[1440px] relative">
         <div className="absolute w-[10%] aspect-square rounded-full bg-[#D9D9D9] dark:bg-[#525252] left-[23%] top-[-6.1%]"></div>
         <div className="absolute w-[217px] h-[59px] rounded-[29.5px] bg-[#FF8C00]  right-[-23.2%] bottom-[19%]"></div>
@@ -61,9 +64,12 @@ export default function () {
               )}
             </span>
           </span>
+          
+         
           <h4 className="dark:text-[#D9D9D9] text-[#777777] mr-[-0.5rem]">
-            DARK MODE
-          </h4>
+  {theme === "dark" ? "LIGHT MODE" : "DARK MODE"}
+</h4>
+
           <span className="text-[#777777]">|</span>
           {i18n.language === "en" ? (
             <h4
