@@ -2,14 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="furkan.png" />
+    <link rel="icon" href="furkan.png?v=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="furkan.png" />
+    <link rel="apple-touch-icon" href="furkan.png?v=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,28 +17,23 @@
       rel="stylesheet"
     />
     <title>Furkan Ozkan</title>
-
     <script>
-      // Tarayıcının tercih ettiği renk şemasına göre dark modu kontrol et
       function applyDarkMode() {
-  var isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
-  document.documentElement.classList.toggle('dark', !isDarkMode);
-}
-
-      // Sayfa yüklendiğinde dark modu uygula
+        var isDarkMode =
+          window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: light)").matches;
+        document.documentElement.classList.toggle("dark", !isDarkMode);
+      }
       applyDarkMode();
-
-      // Kullanıcının tercih ettiği renk şeması değiştiğinde dark modu yeniden uygula
-      window.matchMedia('(prefers-color-scheme: dark)').addListener(function(e) {
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addListener(function (e) {
           applyDarkMode();
-      });
-  </script>
+        });
+    </script>
   </head>
   <body class="bg-white dark:bg-black">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>
 </html>
-
-
-
