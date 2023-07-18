@@ -64,11 +64,10 @@ export default function () {
               )}
             </span>
           </span>
-          
-         
+
           <h4 className="dark:text-[#D9D9D9] text-[#777777] mr-[-0.5rem]">
-  {theme === "dark" ? "LIGHT MODE" : "DARK MODE"}
-</h4>
+            {theme === "dark" ? "LIGHT MODE" : "DARK MODE"}
+          </h4>
 
           <span className="text-[#777777]">|</span>
           {i18n.language === "en" ? (
@@ -115,11 +114,26 @@ export default function () {
                 </h1>
               </p>
             </div>
-            <div className=" mt-14 mb-[1rem] px-[0.7rem] flex gap-5">
-              <a href="https://www.linkedin.com/in/frknozkan8/">
+            <div className="mt-14 mb-[1rem] px-[0.7rem] flex gap-5">
+              <a
+                href="https://www.linkedin.com/in/frknozkan8/"
+                onClick={(event) => {
+                  event.preventDefault();
+                  window.open(
+                    "https://www.linkedin.com/in/frknozkan8/",
+                    "_blank"
+                  );
+                }}
+              >
                 <img src={theme === "light" ? linkedIn : linkedInDark} />
               </a>
-              <a href="https://github.com/frkn8">
+              <a
+                href="https://github.com/frkn8"
+                onClick={(event) => {
+                  event.preventDefault();
+                  window.open("https://github.com/frkn8", "_blank");
+                }}
+              >
                 <img src={theme === "light" ? gitHub : gitHubdark} />
               </a>
             </div>
@@ -141,8 +155,10 @@ export default function () {
                     {t("infoFooter4")}{" "}
                   </span>
                   {t("infoFooter5")}
-                </span>{" "} 
-                <br/><br/><a
+                </span>{" "}
+                <br />
+                <br />
+                <a
                   href="mailto: frknozkan8@gmail.com"
                   className="text-[#FF8C00] underline tracking-widest dark:text-[#FF8C00]"
                 >
