@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Context } from "../contexts/Context"; 
+import { Context } from "../contexts/Context";
 
 export default function Footer() {
   const { theme, setTheme, t, i18n, handleChangeLang } = useContext(Context);
@@ -22,6 +22,8 @@ export default function Footer() {
                 <a
                   id="footer-links"
                   href="https://github.com/frkn8"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-[#1769FF] dark:text-[#82BBFF]"
                 >
                   {t("footerNav1")}
@@ -40,6 +42,8 @@ export default function Footer() {
                 <a
                   id="footer-links"
                   href="https://www.linkedin.com/in/frknozkan8/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-[#0077B5] dark:text-[#419CCB]"
                 >
                   {t("footerNav3")}

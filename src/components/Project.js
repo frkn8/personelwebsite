@@ -2,7 +2,7 @@ import laptop from "../projects/laptop.png";
 import arrowRight from "../projects/arrow-right.svg";
 import arrowRightDark from "../projects/arrow-right-dark.svg";
 import { Context } from "../contexts/Context";
-import { useContext } from "react"; 
+import { useContext } from "react";
 
 export default function Project(props) {
   const { theme, setTheme, t, i18n, handleChangeLang } = useContext(Context);
@@ -34,8 +34,16 @@ export default function Project(props) {
         })}
       </ul>
       <div id="project-links" className="flex justify-between mt-4">
-        <a href={data.gitHubLink}>{t("projectViewGitHub")}</a>
-        <a href={data.vercelLink} className="flex">
+        <a href={data.gitHubLink} target="_blank" rel="noopener noreferrer">
+          {t("projectViewGitHub")}
+        </a>
+
+        <a
+          href={data.vercelLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex"
+        >
           {t("projectVercel")}
           <img
             src={theme === "light" ? arrowRight : arrowRightDark}
