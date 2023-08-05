@@ -35,18 +35,19 @@ export default function () {
 
   return (
     <section className="bg-[#F4F4F4] dark:bg-[#2A262B]">
-      <header className="App-header flex flex-col w-7/12 mx-auto max-w-[1440px] relative">
+    <header className="App-header flex flex-col w-7/12 mx-auto max-w-[1440px] relative">
         <div className="absolute w-[10%] aspect-square rounded-full bg-[#D9D9D9] dark:bg-[#525252] left-[23%] top-[-6.1%]"></div>
         <div className="absolute w-[275px] h-[59px] rounded-[29.5px] bg-[#FF8C00]  right-[-32.2%] bottom-[19%]"></div>
         <div className="absolute w-[10.9%] aspect-square rounded-full  border-[21px] border-solid border-[#D9D9D9] dark:border-[#525252] right-[10.5%] bottom-[-8.4%]"></div>
 
         <div
-          id="toggle"
-          className="flex self-end mt-[4.5rem] mb-[3.5rem] gap-4 justify-center items-center"
-        >
+        id="toggle"
+        className={`toogle-switch-checkbox flex self-end mt-[4.5rem] mb-[3.5rem] gap-4 justify-center items-center ${theme}`}
+        onClick={themeToggle}
+      >
           <span
             onClick={themeToggle}
-            className="flex p-1 w-[3.4rem] rounded-xl bg-[#FF8C00] dark:bg-[#000000]"
+            className=" flex p-1 w-[3.4rem] rounded-xl bg-[#FF8C00] dark:bg-[#000000]"
           >
             <span
               className={
@@ -56,7 +57,7 @@ export default function () {
               }
             >
               {theme === "dark" && (
-                <span className=" absolute flex p-1 w-[13px] h-[13px] rounded-xl bg-[#000000] bottom-[0.1rem] ml-[2px]">
+                <span className="slider round absolute flex p-1 w-[13px] h-[13px] rounded-xl bg-[#000000] bottom-[0.1rem] ml-[2px]">
                   {" "}
                 </span>
               )}
