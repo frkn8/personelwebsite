@@ -1,3 +1,4 @@
+/*
 import jsLogo from "../skills/jsLogo.png";
 import nodeLogo from "../skills/nodeLogo.png";
 import pythonLogo from "../skills/pythonLogo.png";
@@ -65,3 +66,4 @@ export default function Skills() {
     </div>
   );
 }
+*/

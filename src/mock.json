@@ -1,0 +1,59 @@
+[
+    {
+      "name": "JavaScript",
+      "skillImg": "jsLogo.png"
+    },
+    {
+      "name": "React.Js",
+      "skillImg": "reactLogo.png"
+    },
+    {
+      "name": "Node.Js",
+      "skillImg": "nodeLogo.png"
+    },
+    {
+      "name": "Java",
+      "skillImg": "javaLogo.png"
+    },
+    {
+      "name": "Redux",
+      "skillImg": "reduxLogo.png"
+    },
+    {
+      "name": "Cypress",
+      "skillImg": "cypressLogo.png"
+    }, 
+    {
+        "name": "SQL",
+        "skillImg": "sqlLogo.png"
+      },
+      {
+        "name": "Python",
+        "skillImg": "python.png"
+      },
+      {
+        "name": "MySQL",
+        "skillImg": "mysqlLogo.png"
+      },
+      {
+        "name": "Figma",
+        "skillImg": "figmaLogo.png"
+      },
+      {
+        "name": "CSS",
+        "skillImg": "cssLogo.png"
+      },
+      {
+        "name": "HTML",
+        "skillImg": "htmlLogo.png"
+      },
+      {
+        "name": "SQLite",
+        "skillImg": "sqliteLogo.png"
+      },
+      {
+        "name": "VS Code",
+        "skillImg": "vsLogo.png"
+      }
+  
+]

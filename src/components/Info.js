@@ -5,8 +5,6 @@ import linkedInDark from "../info/LinkedIndark.svg";
 import foto2 from "../info/foto2.png";
 import { useContext, useEffect, useState } from "react";
 import { Context } from "../contexts/Context";
-import { useTranslation } from "react-i18next";
-import i18n from "../i18n";
 
 export default function () {
   const { theme, setTheme, t, i18n, handleChangeLang } = useContext(Context);
@@ -73,9 +71,9 @@ export default function () {
           {i18n.language === "en" ? (
             <h4
               onClick={() => handleChangeLang("tr")}
-              className="dark:text-[#777777] text-[#777777]"
+              className="dark:text-[#777777] text-[#777777] cursor-default"
             >
-              <span className="text-[#FF8C00]  hover:text-[#FF8C00]">
+              <span className="text-[#777777] hover:text-[#FF8C00]">
                 TÜRKÇE
               </span>
               'YE GEÇ
@@ -83,10 +81,10 @@ export default function () {
           ) : (
             <h4
               onClick={() => handleChangeLang("en")}
-              className="dark:text-[#777777] text-[#777777] "
+              className="dark:text-[#777777] text-[#777777] cursor-default"
             >
               TO{" "}
-              <span className="text-[#FF8C00] hover:text-[#FF8C00]">
+              <span className="text-[#777777] hover:text-[#FF8C00]">
                 ENGLISH
               </span>
             </h4>

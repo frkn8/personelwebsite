@@ -2,6 +2,7 @@ import { useEffect, useState, useTransition } from "react";
 import "./App.css";
 import Footer from "./components/Footer";
 import Info from "./components/Info";
+import SimpleSlider from "./components/SimpleSlider";
 import Profile from "./components/Profile";
 import { Projects } from "./components/Projects";
 import Skills from "./components/Skills";
@@ -31,7 +32,7 @@ function App() {
       <div className="App w-max-screen h-[3094px] bg-white dark:bg-[#484148] ">
         <div className="mx-auto ">
           <Info />
-          <Skills />
+          <SimpleSlider />
           <Profile />
           <Projects />
           <Footer />

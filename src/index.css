@@ -1,8 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 html,
 body,
 div,
@@ -211,7 +206,7 @@ body {
 }
 .shadow-red {
   border-radius: 32px;
-  box-shadow: -1.1rem -1.1rem #FF8C00;
+  box-shadow: -1.1rem -1.1rem #ff8c00;
 }
 
 .shadow-gray {
@@ -236,11 +231,8 @@ body {
   font-weight: 500;
   font-size: 48px;
   line-height: 58px;
-  /* identical to box height */
-
   letter-spacing: 0.01em;
-
-  
+  padding-bottom: 5rem;
 }
 
 #section-title-small {
@@ -284,7 +276,7 @@ body {
   font-size: 24px;
   line-height: 32px;
   letter-spacing: 0.01em;
-  color: #FF8C00;
+  color: #ff8c00;
 }
 
 #about-me {
@@ -330,3 +322,53 @@ body {
   font-size: 20px;
   line-height: 150%;
 }
+
+/* Skills Part */
+
+.skillsContainer {
+  text-align: center;
+  margin: 8rem 12rem 0 12rem;
+}
+.skills {
+  gap: 2rem;
+  display: flex;
+}
+.skillsContent {
+  width: 100%;
+}
+
+.skill-list {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px;
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+.skill-list h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 28px;
+  color: #1675a1;
+  margin-bottom: 2rem;
+  text-align: center;
+  margin-top: 0.7rem;
+}
+.skill-list p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+ .js h3 {
+  padding-top: 1rem;
+ }
+/* Skills Part */
