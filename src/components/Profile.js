@@ -9,7 +9,7 @@ export default function Profile() {
       className=" py-[4.5rem] bg-[#F4F4F4] dark:bg-[#2A262B]"
     >
       <div className="w-7/12 mx-auto max-w-[1440px] relative">
-        <div className="absolute w-[13.9%] aspect-square rounded-full  border-[25px] border-solid border-[#FF8C00]  right-[-40.8%] top-[-28.1%]"></div>
+        <div className="absolute w-[13.9%] aspect-square rounded-full  border-[25px] border-solid border-[#FF8C00]  right-[-32.8%] top-[-28.1%]"></div>
 
         <h1
           className="text-center text-[#000000] dark:text-[#FFFFFF]"

@@ -37,7 +37,7 @@ export default function () {
     <section className="bg-[#F4F4F4] dark:bg-[#2A262B]">
       <header className="App-header flex flex-col w-7/12 mx-auto max-w-[1440px] relative">
         <div className="absolute w-[10%] aspect-square rounded-full bg-[#D9D9D9] dark:bg-[#525252] left-[23%] top-[-6.1%]"></div>
-        <div className="absolute w-[275px] h-[59px] rounded-[29.5px] bg-[#FF8C00]  right-[-40.2%] bottom-[19%]"></div>
+        <div className="absolute w-[275px] h-[59px] rounded-[29.5px] bg-[#FF8C00]  right-[-32.2%] bottom-[19%]"></div>
         <div className="absolute w-[10.9%] aspect-square rounded-full  border-[21px] border-solid border-[#D9D9D9] dark:border-[#525252] right-[10.5%] bottom-[-8.4%]"></div>
 
         <div
@@ -63,7 +63,7 @@ export default function () {
             </span>
           </span>
 
-          <h4 className="dark:text-[#D9D9D9] text-[#777777] mr-[-0.5rem]">
+          <h4 onClick={themeToggle} className="dark:text-[#D9D9D9] text-[#777777] mr-[-0.5rem] cursor-default">
             {theme === "dark" ? "LIGHT MODE" : "DARK MODE"}
           </h4>
 

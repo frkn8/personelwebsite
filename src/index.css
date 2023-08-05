@@ -355,17 +355,18 @@ body {
   font-weight: 500;
   font-size: 30px;
   line-height: 28px;
-  color: #1675a1;
+  color: #000000;
   margin-bottom: 2rem;
   text-align: center;
   margin-top: 0.7rem;
 }
 .skill-list p {
   font-style: normal;
+  font-family: Inter;
   font-weight: 400;
   font-size: 0.75rem;
   line-height: 1rem;
-  color: #6b7280;
+  color: #000000;
   margin-bottom: 1rem;
 }
  .js h3 {

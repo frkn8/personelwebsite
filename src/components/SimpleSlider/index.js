@@ -59,7 +59,7 @@ const SimpleSlider = () => {
                       src={skill.skillImg}
                       alt="skillImg"
                     />
-                    <h3>{skill.name}</h3>
+                    <h3 className=" dark:text-[#F4F4F4]">{skill.name}</h3>
                   </div>
                 </div>
               </div>

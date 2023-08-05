@@ -12,8 +12,12 @@
       "skillImg": "nodeLogo.png"
     },
     {
-      "name": "Java",
-      "skillImg": "javaLogo.png"
+      "name": "CSS",
+      "skillImg": "cssLogo.png"
+    },
+    {
+      "name": "Figma",
+      "skillImg": "figmaLogo.png"
     },
     {
       "name": "Redux",
@@ -36,20 +40,16 @@
         "skillImg": "mysqlLogo.png"
       },
       {
-        "name": "Figma",
-        "skillImg": "figmaLogo.png"
-      },
-      {
-        "name": "CSS",
-        "skillImg": "cssLogo.png"
-      },
-      {
-        "name": "HTML",
-        "skillImg": "htmlLogo.png"
+        "name": "Java",
+        "skillImg": "javaLogo.png"
       },
       {
         "name": "SQLite",
         "skillImg": "sqliteLogo.png"
+      },
+      {
+        "name": "HTML",
+        "skillImg": "htmlLogo.png"
       },
       {
         "name": "VS Code",
