@@ -10,9 +10,9 @@ export default function Footer() {
           <span className="flex w-6/12 relative">
             <h2 id="footer-text" className="text-[#0A0A14] dark:text-[#FFFFFF]">
               <span className="absolute w-[230px] h-[18px] bg-[#998d7f] top-[2.6rem] left-[12.45rem] rounded-[4px] dark:bg-[#998d7f] z-[10]"></span>{" "}
-              {t("footer1")}{" "}
-              <span className="relative z-10">{t("footer2")}</span>{" "}
-              {t("footer3")}
+              {t("footer_text_1")}{" "}
+              <span className="relative z-10">{t("footer_text_2")}</span>{" "}
+              {t("footer_text_3")}
             </h2>
           </span>
 
@@ -26,7 +26,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="text-[#1769FF] dark:text-[#82BBFF]"
                 >
-                  {t("footerNav1")}
+                  {t("footer_navigation_1")}
                 </a>
               </li>
               <li>
@@ -35,7 +35,7 @@ export default function Footer() {
                   href="#"
                   className="text-[#0A0A14] dark:text-[#FFFFFF]"
                 >
-                  {t("footerNav2")}
+                  {t("footer_navigation_2")}
                 </a>
               </li>
               <li>
@@ -46,7 +46,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="text-[#0077B5] dark:text-[#419CCB]"
                 >
-                  {t("footerNav3")}
+                  {t("footer_navigation_3")}
                 </a>
               </li>
               <li>
@@ -55,7 +55,7 @@ export default function Footer() {
                   href="mailto: frknozkan8@gmail.com"
                   className="text-[#FF8C00] dark:text-[#FF8C00]"
                 >
-                  {t("footerNav4")}
+                  {t("footer_navigation_4")}
                 </a>
               </li>
             </ul>

@@ -47,7 +47,7 @@ const SimpleSlider = () => {
   return (
     <div className="skillsContainer mb-8 ml-8">
       <div className="skillsContent">
-        <h3 id="section-title" className="text-[#0a0a14] dark:text-[#F4F4F4]">{t("skillsTitle")}</h3>
+        <h3 id="section-title" className="text-[#0a0a14] dark:text-[#F4F4F4]">{t("title_skills")}</h3>
         <Slider {...settings}>
           {skillData.map((skill) => (
             <div className="list" key={skill.name}>

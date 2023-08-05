@@ -35,7 +35,7 @@ export default function Project(props) {
       </ul>
       <div id="project-links" className="flex justify-between mt-4">
         <a href={data.gitHubLink} target="_blank" rel="noopener noreferrer">
-          {t("projectViewGitHub")}
+          {t("project_to_github")}
         </a>
 
         <a
@@ -44,7 +44,7 @@ export default function Project(props) {
           rel="noopener noreferrer"
           className="flex"
         >
-          {t("projectVercel")}
+          {t("project_to_site")}
           <img
             src={theme === "light" ? arrowRight : arrowRightDark}
             alt="arrowRight"

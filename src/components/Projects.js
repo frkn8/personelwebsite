@@ -44,7 +44,7 @@ export function Projects() {
           className="text-center py-8 dark:text-[#FFFFFF]"
           id="section-title-small"
         >
-          {t("projectsTitle")}
+          {t("my_projects_title")}
         </h1>
         <div className="flex flex-row justify-center gap-[4.2rem]  ">
           {projectsData.map((project, i) => {

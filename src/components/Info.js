@@ -37,7 +37,7 @@ export default function () {
     <section className="bg-[#F4F4F4] dark:bg-[#2A262B]">
       <header className="App-header flex flex-col w-7/12 mx-auto max-w-[1440px] relative">
         <div className="absolute w-[10%] aspect-square rounded-full bg-[#D9D9D9] dark:bg-[#525252] left-[23%] top-[-6.1%]"></div>
-        <div className="absolute w-[217px] h-[59px] rounded-[29.5px] bg-[#FF8C00]  right-[-23.2%] bottom-[19%]"></div>
+        <div className="absolute w-[275px] h-[59px] rounded-[29.5px] bg-[#FF8C00]  right-[-40.2%] bottom-[19%]"></div>
         <div className="absolute w-[10.9%] aspect-square rounded-full  border-[21px] border-solid border-[#D9D9D9] dark:border-[#525252] right-[10.5%] bottom-[-8.4%]"></div>
 
         <div
@@ -97,7 +97,7 @@ export default function () {
                 id="info-text-hi"
                 className="mb-5 text-[#000000] dark:text-[#FFFFFF]"
               >
-                {t("infoHeader")}
+                {t("heroheading1")}
               </p>
               <p>
                 <h1
@@ -106,9 +106,9 @@ export default function () {
                 >
                   <span className="relative">
                     <span className="absolute w-[78%] h-[61%] bg-[#FF8C00] top-[2.04rem] right-[3.25rem] rounded-[4px]"></span>{" "}
-                    <span className="relative z-10">{t("infoName")}</span>
+                    <span className="relative z-10">{t("heroheading2")}</span>
                   </span>{" "}
-                  {t("infoParag")}
+                  {t("infoparagraph")}
                 </h1>
               </p>
             </div>
@@ -142,17 +142,17 @@ export default function () {
               <p className="text-[#000000] dark:text-[#FFFFFF]">
                 <span className=" w-[10%]">
                   {" "}
-                  {t("infoFooter1")}
+                  {t("footertext1")}
                   <span className="text-[#FF8C00] dark:text-[#FF8C00]">
                     {" "}
-                    {t("infoFooter2")}{" "}
+                    {t("footertext2")}{" "}
                   </span>
-                  {t("infoFooter3")}
+                  {t("footertext3")}
                   <span className="text-[#FF8C00] dark:text-[#FF8C00] tracking-wider">
                     {" "}
-                    {t("infoFooter4")}{" "}
+                    {t("footertext4")}{" "}
                   </span>
-                  {t("infoFooter5")}
+                  {t("footertext5")}
                 </span>{" "}
                 <br />
                 <br />
@@ -160,7 +160,7 @@ export default function () {
                   href="mailto: frknozkan8@gmail.com"
                   className="text-[#FF8C00] underline tracking-widest dark:text-[#FF8C00]"
                 >
-                  {t("infoEmail")}
+                  {t("mailto")}
                 </a>
               </p>
             </div>
