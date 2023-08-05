@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { Context } from "../contexts/Context";
 
 export default function Footer() {
-  const { theme, setTheme, t, i18n, handleChangeLang } = useContext(Context);
+  const {t} = useContext(Context);
   return (
     <section className="bg-[#eeeeee7d] dark:bg-[#2b272b]">
       <footer className="w-7/12 flex mx-auto max-w-[1440px] ">

@@ -38,8 +38,8 @@ export function Projects() {
   ];
 
   return (
-    <section id="Projects">
-      <div className="py-[2rem] max-w-[1440px] flex flex-col mx-auto">
+    <section id="Projects" className="dark:bg-[#484148] " >
+      <div className="pb-[8rem] pt-[2rem] max-w-[1440px] flex flex-col mx-auto ">
         <h1
           className="text-center py-8 dark:text-[#FFFFFF]"
           id="section-title-small"

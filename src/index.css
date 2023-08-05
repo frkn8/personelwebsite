@@ -192,7 +192,7 @@ body {
   letter-spacing: 0.1em;
 }
 
-#used-skills {
+#project-skills {
   padding: 0.5rem 1rem;
   background: #ffffff;
   border-radius: 76px;
@@ -244,7 +244,7 @@ body {
   letter-spacing: 0.01em;
 }
 
-#info-heads {
+#info-keyss {
   display: flex;
   font-family: "Inter";
   font-style: normal;
@@ -257,7 +257,7 @@ body {
   margin-right: 6.3%;
 }
 
-#info-value {
+#info-values {
   display: flex;
   justify-content: flex-start;
   font-family: "Inter";
@@ -269,7 +269,7 @@ body {
   width: 56%;
 }
 
-#basic-info {
+#basic-information {
   font-family: "Playfair Display";
   font-style: normal;
   font-weight: 400;
@@ -297,7 +297,7 @@ body {
   letter-spacing: 0.01em;
 }
 
-#projects-title {
+#project-title {
   font-family: "Playfair Display";
   font-style: normal;
   font-weight: 700;
@@ -307,7 +307,7 @@ body {
   letter-spacing: 0.05em;
 }
 
-#projects-body {
+#project-text {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -315,7 +315,7 @@ body {
   line-height: 150%;
 }
 
-#project-links {
+#project-link {
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;

@@ -6,7 +6,7 @@ export default function Profile() {
   return (
     <section
       id="Profile"
-      className=" py-[4.5rem] bg-[#F4F4F4] dark:bg-[#2A262B]"
+      className=" pb-[10rem] pt-[6rem] bg-[#F4F4F4] dark:bg-[#2A262B]"
     >
       <div className="w-7/12 mx-auto max-w-[1440px] relative">
         <div className="absolute w-[13.9%] aspect-square rounded-full  border-[25px] border-solid border-[#FF8C00]  right-[-32.8%] top-[-28.1%]"></div>
@@ -15,40 +15,40 @@ export default function Profile() {
           className="text-center text-[#000000] dark:text-[#FFFFFF]"
           id="section-title-small"
         >
-          {t("titple_profile")}
+          {t("title_profile")}
         </h1>
         <div className="flex flex-row justify-center  rounded-[12px] text-[#000000] dark:text-[#FFFFFF] ">
           <div
-            id="Basic-information"
+            id="Information"
             className="hover:scale-105 flex w-[46.5%] max-w-[500px] flex-col ml-7  p-10 gap-5 mt-[2rem] bg-[#FFFFFF] dark:bg-[#525252] shadow-gray"
           >
-            <h4 id="basic-info" className="text-[#FF8C00] mb-[0.8rem]">
+            <h4 id="basic-information" className="text-[#FF8C00] mb-[0.8rem]">
               {t("profile_header")}
             </h4>
             <ul className="flex flex-col gap-5  ">
               <li className="flex flex-row">
-                <h5 id="info-heads"> {t("profile_birth_header")}</h5>
-                <span id="info-value"> {t("profile_birth_value")}</span>
+                <h5 id="info-keyss"> {t("profile_birth_header")}</h5>
+                <span id="info-values"> {t("profile_birth_value")}</span>
               </li>
               <li className="flex flex-row">
-                <h5 id="info-heads">{t("profile_city_header")}</h5>
-                <span id="info-value">{t("profile_city_value")}</span>
+                <h5 id="info-keyss">{t("profile_city_header")}</h5>
+                <span id="info-values">{t("profile_city_value")}</span>
               </li>
               <li className="flex flex-row">
-                <h5 id="info-heads">{t("profile_education_header")}</h5>
-                <span id="info-value">{t("profile_education_value")}</span>
+                <h5 id="info-keyss">{t("profile_education_header")}</h5>
+                <span id="info-values">{t("profile_education_value")}</span>
               </li>
               <li className="flex flex-row">
-                <h5 id="info-heads">{t("profile_department_header")}</h5>
-                <span id="info-value">{t("profile_department_value")}</span>
+                <h5 id="info-keyss">{t("profile_department_header")}</h5>
+                <span id="info-values">{t("profile_department_value")}</span>
               </li>
               <li className="flex flex-row">
-                <h5 id="info-heads">{t("profile_graduation_header")}</h5>
-                <span id="info-value">{t("profile_graduation_value")}</span>
+                <h5 id="info-keyss">{t("profile_graduation_header")}</h5>
+                <span id="info-values">{t("profile_graduation_value")}</span>
               </li>
               <li className="flex flex-row">
-                <h5 id="info-heads">{t("profile_role_header")}</h5>
-                <span id="info-value">{t("profile_role_value")}</span>
+                <h5 id="info-keyss">{t("profile_role_header")}</h5>
+                <span id="info-values">{t("profile_role_value")}</span>
               </li>
             </ul>
           </div>

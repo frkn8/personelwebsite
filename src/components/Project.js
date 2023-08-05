@@ -5,35 +5,35 @@ import { Context } from "../contexts/Context";
 import { useContext } from "react";
 
 export default function Project(props) {
-  const { theme, setTheme, t, i18n, handleChangeLang } = useContext(Context);
+  const { theme, t, i18n} = useContext(Context);
   const lang = i18n.language;
 
   const { data, index } = props;
   console.log(index);
   return (
     <div
-      id="Project-card "
+      id="Project-page "
       className={
         index % 2 === 0
           ? `box-border max-w-[500px] max-h-[668px] flex flex-col p-10 bg-[#ffd29c82] rounded-[12px] dark:bg-[#63523c82] text-[#000000] dark:text-[#FFFFFF]`
           : `box-border max-w-[500px] max-h-[668px] flex flex-col p-10 bg-[#F4F2ED] rounded-[12px] dark:bg-[#5e5c5b] text-[#000000] dark:text-[#FFFFFF]`
       }
     >
-      <h3 id="projects-title" className="mb-4">
+      <h3 id="project-title" className="mb-4">
         {lang === "tr" ? data.titleTr : data.titleEn}
       </h3>
-      <p id="projects-body">{lang === "tr" ? data.bodyTr : data.bodyEn}</p>
+      <p id="project-text">{lang === "tr" ? data.bodyTr : data.bodyEn}</p>
 
       <ul className="flex flex-row flex-wrap w-80 gap-3 my-5">
         {data.skillsUsed.map((skill, i) => {
           return (
-            <li key={i} id="used-skills">
+            <li key={i} id="project-skills">
               {skill}
             </li>
           );
         })}
       </ul>
-      <div id="project-links" className="flex justify-between mt-4">
+      <div id="project-link" className="flex justify-between mt-4">
         <a href={data.gitHubLink} target="_blank" rel="noopener noreferrer">
           {t("project_to_github")}
         </a>
@@ -52,7 +52,7 @@ export default function Project(props) {
         </a>
       </div>
       <div
-        id="Project-Image-Cont"
+        id="Project-img"
         className="flex relative h-[500px] items-center justify-center"
       >
         <img
