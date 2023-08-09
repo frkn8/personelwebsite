@@ -43,7 +43,6 @@ export default function () {
         <div
         id="toggle"
         className={`toogle-switch-checkbox flex self-end mt-[4.5rem] mb-[3.5rem] gap-4 justify-center items-center ${theme}`}
-        onClick={themeToggle}
       >
           <span
             onClick={themeToggle}
