@@ -9,7 +9,7 @@ import { Context } from "../contexts/Context";
 export default function () {
   const { theme, setTheme, t, i18n, handleChangeLang } = useContext(Context);
 
-  useEffect(() => {
+ useEffect(() => {
     if (localStorage.getItem("theme")) {
       setTheme(localStorage.getItem("theme"));
     } else if (window.matchMedia("(prefers-color-scheme: light)").matches) {
@@ -74,18 +74,17 @@ export default function () {
               className="dark:text-[#777777] text-[#777777] cursor-default"
             >
               <span className="text-[#777777] hover:text-[#FF8C00]">
-                TÜRKÇE
+                TURKISH
               </span>
-              'YE GEÇ
             </h4>
           ) : (
             <h4
               onClick={() => handleChangeLang("en")}
               className="dark:text-[#777777] text-[#777777] cursor-default"
             >
-              TO{" "}
+              {" "}
               <span className="text-[#777777] hover:text-[#FF8C00]">
-                ENGLISH
+                İNGİLİZCE
               </span>
             </h4>
           )}
