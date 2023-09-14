@@ -170,7 +170,7 @@ body {
   font-weight: 500;
   font-size: 42px;
   line-height: 150%;
-  text-align: right;
+  /* text-align: right; */
   letter-spacing: 0.01em;
 }
 
@@ -202,7 +202,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #FF8C00;
+  background-color: #ff8c00;
   border-radius: 1rem;
   z-index: -1;
   transition: transform 0.3s ease;
@@ -215,7 +215,7 @@ body {
   left: 0.1rem;
   width: calc(50% - 0.2rem);
   height: calc(100% - 0.2rem);
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 1rem;
   z-index: -1;
   transition: transform 0.3s ease;
@@ -362,10 +362,10 @@ body {
 
 /* Skills Part */
 
-.skillsContainer {
+/* .skillsContainer {
   text-align: center;
   margin: 8rem 12rem 0 12rem;
-}
+} */
 .skills {
   gap: 2rem;
   display: flex;
@@ -384,7 +384,6 @@ body {
 .list {
   display: flex;
   justify-content: space-evenly;
-  
 }
 
 .skill-list h3 {
@@ -406,7 +405,7 @@ body {
   color: #000000;
   margin-bottom: 1rem;
 }
- .js h3 {
+.js h3 {
   padding-top: 1rem;
- }
+}
 /* Skills Part */

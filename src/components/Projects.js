@@ -46,7 +46,7 @@ export function Projects() {
         >
           {t("my_projects_title")}
         </h1>
-        <div className="flex flex-row justify-center gap-[4.2rem]  ">
+        <div className="flex flex-col lg:flex-row justify-center gap-[4.2rem] items-center">
           {projectsData.map((project, i) => {
             return <Project key={i} data={project} index={i} />;
           })}

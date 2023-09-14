@@ -9,7 +9,7 @@ import { Context } from "../contexts/Context";
 export default function () {
   const { theme, setTheme, t, i18n, handleChangeLang } = useContext(Context);
 
- useEffect(() => {
+  useEffect(() => {
     if (localStorage.getItem("theme")) {
       setTheme(localStorage.getItem("theme"));
     } else if (window.matchMedia("(prefers-color-scheme: light)").matches) {
@@ -34,16 +34,16 @@ export default function () {
   };
 
   return (
-    <section className="bg-[#F4F4F4] dark:bg-[#2A262B]">
-    <header className="App-header flex flex-col w-7/12 mx-auto max-w-[1440px] relative">
+    <section className="bg-[#F4F4F4] dark:bg-[#2A262B] overflow-hidden">
+      <header className="px-4 App-header flex flex-col w-full  mx-auto max-w-[1440px] relative z-0">
         <div className="absolute w-[10%] aspect-square rounded-full bg-[#D9D9D9] dark:bg-[#525252] left-[23%] top-[-6.1%]"></div>
-        <div className="absolute w-[275px] h-[59px] rounded-[29.5px] bg-[#FF8C00]  right-[-32.2%] bottom-[19%]"></div>
+        <div className="absolute w-[275px] h-[59px] rounded-[29.5px] bg-[#FF8C00] right-[-2.2%] bottom-[19%] z-[-1]"></div>
         <div className="absolute w-[10.9%] aspect-square rounded-full  border-[21px] border-solid border-[#D9D9D9] dark:border-[#525252] right-[10.5%] bottom-[-8.4%]"></div>
 
         <div
-        id="toggle"
-        className={`toogle-switch-checkbox flex self-end mt-[4.5rem] mb-[3.5rem] gap-4 justify-center items-center ${theme}`}
-      >
+          id="toggle"
+          className={`toogle-switch-checkbox flex self-end mt-[4.5rem] mb-[3.5rem] gap-4 justify-center items-center ${theme}`}
+        >
           <span
             onClick={themeToggle}
             className=" flex p-1 w-[3.4rem] rounded-xl bg-[#FF8C00] dark:bg-[#000000]"
@@ -89,9 +89,9 @@ export default function () {
             </h4>
           )}
         </div>
-        <section className="info flex flex-row justify-between mb-20">
-          <div className="info-text flex flex-col w-3/5">
-            <div className=" px-[0.6rem]  ">
+        <section className="info flex flex-col lg:flex-row justify-between mb-20">
+          <div className="info-text flex flex-col lg:w-3/5 order-2 lg:order-1 text-center lg:text-start">
+            <div className="px-[0.6rem]">
               <p
                 id="info-text-hi"
                 className="mb-5 text-[#000000] dark:text-[#FFFFFF]"
@@ -111,8 +111,9 @@ export default function () {
                 </h1>
               </p>
             </div>
-            <div className="mt-14 mb-[1rem] px-[0.7rem] flex gap-5">
+            <div className="mt-14 mb-[1rem] px-[0.7rem] flex gap-5 justify-center lg:justify-start">
               <a
+                className="inline-block"
                 href="https://www.linkedin.com/in/frknozkan8/"
                 onClick={(event) => {
                   event.preventDefault();
@@ -125,6 +126,7 @@ export default function () {
                 <img src={theme === "light" ? linkedIn : linkedInDark} />
               </a>
               <a
+                className="inline-block"
                 href="https://github.com/frkn8"
                 onClick={(event) => {
                   event.preventDefault();
@@ -136,7 +138,7 @@ export default function () {
             </div>
             <div
               id="info-text-footer"
-              className=" w-[85%] px-[0.5rem] pt-2 pb-[0.7rem] "
+              className="w-full lg:w-[85%] px-[0.5rem] pt-2 pb-[0.7rem] "
             >
               <p className="text-[#000000] dark:text-[#FFFFFF]">
                 <span className=" w-[10%]">
@@ -165,11 +167,13 @@ export default function () {
             </div>
           </div>
 
-          <img
-            className="mt-[3.4rem] mr-2 object-cover w-[341px] h-[341px]  shadow-red rounded-[22px] dark:brightness-[.9] "
-            src={foto2}
-            alt=""
-          />
+          <div className="order-1 lg:order-2 flex justify-center lg:justify-end mb-10 lg:mb-0">
+            <img
+              className="mt-[3.4rem] mr-2 object-cover w-[341px] h-[341px] shadow-red rounded-[22px] dark:brightness-[.9]"
+              src={foto2}
+              alt=""
+            />
+          </div>
         </section>
       </header>
     </section>

@@ -1,4 +1,4 @@
-import { useState} from "react";
+import { useState } from "react";
 import "./App.css";
 import Footer from "./components/Footer";
 import Info from "./components/Info";
@@ -29,7 +29,7 @@ function App() {
       }}
     >
       <div className="App w-max-screen h-[3094px] bg-white dark:bg-[#484148] ">
-        <div className="mx-auto ">
+        <div className="mx-auto">
           <Info />
           <SimpleSlider />
           <Profile />

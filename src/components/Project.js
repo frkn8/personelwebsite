@@ -5,7 +5,7 @@ import { Context } from "../contexts/Context";
 import { useContext } from "react";
 
 export default function Project(props) {
-  const { theme, t, i18n} = useContext(Context);
+  const { theme, t, i18n } = useContext(Context);
   const lang = i18n.language;
 
   const { data, index } = props;
@@ -15,8 +15,8 @@ export default function Project(props) {
       id="Project-page "
       className={
         index % 2 === 0
-          ? `box-border max-w-[500px] max-h-[668px] flex flex-col p-10 bg-[#ffd29c82] rounded-[12px] dark:bg-[#63523c82] text-[#000000] dark:text-[#FFFFFF]`
-          : `box-border max-w-[500px] max-h-[668px] flex flex-col p-10 bg-[#F4F2ED] rounded-[12px] dark:bg-[#5e5c5b] text-[#000000] dark:text-[#FFFFFF]`
+          ? `box-border max-w-[85%] md:max-w-[500px] max-h-[668px] flex flex-col p-10 bg-[#ffd29c82] rounded-[12px] dark:bg-[#63523c82] text-[#000000] dark:text-[#FFFFFF]`
+          : `box-border max-w-[85%] md:max-w-[500px] max-h-[668px] flex flex-col p-10 bg-[#F4F2ED] rounded-[12px] dark:bg-[#5e5c5b] text-[#000000] dark:text-[#FFFFFF]`
       }
     >
       <h3 id="project-title" className="mb-4">
@@ -57,9 +57,9 @@ export default function Project(props) {
       >
         <img
           src={data.projectImageURL}
-          className=" absolute top-[111px] max-w-[380px] h-[220px] object-cover "
+          className=" absolute top-[111px] max-w-[280px] h-[200px]  md:max-w-[380px] md:h-[220px] object-cover "
         />
-        <img src={laptop} className=" absolute top-[95px] max-w-[500px] " />
+        <img src={laptop} className=" absolute top-[95px] max-w-[400px] md:max-w-[500px]" />
       </div>
     </div>
   );
